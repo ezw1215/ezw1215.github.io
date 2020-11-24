@@ -1,0 +1,100 @@
+body {
+    background-color: #BAE2EE;
+    width: 100vw;
+    height: 100vh;
+}
+
+#animals-first-row {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-content: center;
+    margin-inline-start: 100px;
+    margin-inline-end: 100px;
+    margin-bottom: 0px;
+}
+
+#animals-second-row {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-content: center;
+    margin-inline-start: 100px;
+    margin-inline-end: 100px;
+    margin-top: 0px;
+}
+
+#second-text {
+    margin: auto;
+    width: 50%;
+    text-align: center;
+    color: purple;
+    font-size: 15px;
+    font-family: 'Raleway', sans-serif;
+    font-weight: 3px;
+    margin-bottom: 0px;
+}
+
+@keyframes upDown {
+    0% {transform: translateY(50px);}
+    50% {transform: translateY(0px);}
+    100% {transform: translateY(50px);}
+}
+
+.baby {
+    animation-name: upDown;
+    animation-duration: 1.5s;
+    animation-iteration-count: infinite;
+    animation-delay: 0s;
+    animation-timing-function: ease-in;
+}
+
+.animal {
+    animation-name: upDown;
+    animation-duration: 1.5s;
+    animation-iteration-count: infinite;
+    animation-delay: 0.2s;
+    animation-timing-function: ease-in;
+}
+
+.heaven {
+    animation-name: upDown;
+    animation-duration: 1.5s;
+    animation-iteration-count: infinite;
+    animation-delay: 0.4s;
+    animation-timing-function: ease-in;
+}
+
+.info {
+    text-shadow: -2px 0 #93677B, 0 2px #93677B, 2px 0 #93677B, 0 -2px #93677B;
+}
+
+#middle-text {
+    color: #DDBFCD;
+    font-size: 68px;
+    font-family: 'Sacramento', cursive;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-content: center;
+    margin-inline-start: 400px;
+    margin-inline-end: 400px;
+    font-weight: bold;
+    margin-top: -15px;
+    margin-bottom: 0px;
+}
+
+img {
+    margin: 20px;
+    width: 140px;
+    height: 140px;
+    padding: 50px;
+    border-radius: 50%;
+    filter: blur(2.5px);
+}
+
+img:hover{
+    transform: scale(2);
+    filter: blur(0px);
+}
+
